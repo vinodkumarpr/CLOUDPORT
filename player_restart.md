@@ -2,7 +2,7 @@
 
 The following are the checks to identify the reasons for player restarts.
 
-#### Has host machine or EC2 virtual machine restarted?
+## Has host machine or EC2 virtual machine restarted?
 
 Check for “DEVICE BOOTED” log in **/mnt/ops/logs/darti_\<date>.log**
   
@@ -17,7 +17,7 @@ This indicates that a maintanance reboot of virtual machine in case of EC2 insta
 1. Was there a planned reboot at data center or power fluctuation that resulted in **Edge device** reboot?
 2. Was there an reboot of underlying hardware for an **EC2 instance**?
 
-### Was there crash due to the log rotate bug? (A known issue)
+## Was there crash due to the log rotate bug? (A known issue)
 
 If a player crash is observed around **00:00** or between **03:00 - 03:30**, then it could be because of _top/iotop/syslog_ compression. In this case the gzip process will be taking IO at the time of crash.
 
@@ -31,7 +31,7 @@ Check **/mnt/ops/logs/darti_iotop_\<date>.log**
 
 There is no immediate recovery steps. The issue is resolved in the recent releases.
 
-### Was there crash due to graphics load? (A known issue)
+## Was there crash due to graphics load? (A known issue)
 
 
 Check **/mnt/ops/logs/darti_iotop_\<date>.log** (_**top**_ log)
