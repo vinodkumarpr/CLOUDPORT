@@ -14,8 +14,8 @@ This indicates that a maintanance reboot of virtual machine in case of EC2 insta
 
 **Recommended Actions**
 
-1. Was there a planned reboot at data center or power fluctuation that resulted in **Edge device** reboot?
-2. Was there an reboot of underlying hardware for an **EC2 instance**?
+> 1. Was there a planned reboot at data center or power fluctuation that resulted in **Edge device** reboot?
+> 2. Was there an reboot of underlying hardware for an **EC2 instance**?
 
 ## Log rotate crash
 
@@ -29,7 +29,7 @@ Check **/mnt/ops/logs/darti_iotop_\<date>.log**
   
 **Recommended Actions**
 
-There is no immediate recovery steps. The issue is resolved in the recent releases.
+> There is no immediate recovery steps. The issue is resolved in the recent releases.
 
 ## High Graphics Load Crash
 
@@ -60,7 +60,7 @@ Aug  7 05:56:07 CMHMM_001 player_app: ,INFO, com.amagi.amagi_classes.gfx_hndlr, 
 ```
 **Recommended Action**
 
-Check with L3 if these many graphics are supported in the release.
+> Check with L3 if these many graphics are supported in the release.
 
 **Too big Graphics**
 
@@ -68,5 +68,5 @@ Also check if the currently scheduled graphics that are **big files**. Check for
   
 **Recommended Action**
 
-Check if this graphics played fine earlier and if it has played earlier, check with L3.
+> Check if this graphics played fine earlier and if it has played earlier, check with L3.
 
